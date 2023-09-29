@@ -1,0 +1,31 @@
+.ejercicios_videos {
+    .color_fondo {
+        background-color: $fondoclaro;
+
+        h3 {
+            font-family: $Titulos;
+            margin: auto;
+            max-width: 74rem;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        p {
+            @extend .textos;
+            max-width: 74rem;
+            margin: auto;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .videos {
+            display: flex;
+            margin: auto;
+            max-width: 97%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+    }
+
+}

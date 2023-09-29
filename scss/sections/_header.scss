@@ -1,0 +1,16 @@
+.navbar-expand-lg {
+    background: rgb(132, 88, 240);
+    background: linear-gradient(96deg, $fondovioleta 32%, $verde1 64%, $boton 100%);
+    font-family: $textos;
+    font-weight: 400;
+}
+
+/* Pseudoclases: hover */
+li {
+    a:hover {
+        background-color: rgb(140, 98, 248);
+        border-radius: 15%;
+        transform: scale(1.1);
+
+    }
+}

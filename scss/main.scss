@@ -1,0 +1,36 @@
+// Tipografias
+@import './recursos/tipografias';
+
+// Colores
+@import './variables/colores';
+
+// extends
+@import './recursos/extend';
+
+@import './recursos/bootstrap-customizado';
+
+// Resteteo
+@import './recursos/reset';
+
+// Secciones
+@import './sections/header';
+@import './sections/main_index';
+@import './sections/sobre_mi';
+@import './sections/servicios';
+@import './sections/ejercicios';
+@import './sections/turnos';
+@import './sections/footer';
+
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar-toggler-icon {
+    background-image: url('https://th.bing.com/th/id/R.2a06ccb2723201c1d36d4c04f1119961?rik=y13Xin8JxF69fg&riu=http%3a%2f%2fstadtkapelle-neumarkt.de%2fimg%2fmenu-alt-512.png&ehk=8S6utMmzN7ItriOH3b96iCwrSxgasnb4UPMQlgfFkGM%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.nav-link {
+    color: $txtnav;
+}
+
+

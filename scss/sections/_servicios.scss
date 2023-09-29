@@ -1,0 +1,37 @@
+main {
+    h1 {
+        @extend .titulos1;
+        text-align: center;
+
+    }
+
+    .kinesiologia {
+        margin: auto;
+        max-width: 75%;
+        padding: 3rem 0 3rem 0;
+
+        .img_servicios {
+            max-width: 400px;
+        }
+
+        .titulo_serv {
+            @extend .titulos2;
+        }
+
+        .p_serv {
+            @extend .textos;
+            padding-left: 10px;
+        }
+
+        button {
+
+            @extend .button;
+
+        }
+
+    }
+
+
+
+
+}

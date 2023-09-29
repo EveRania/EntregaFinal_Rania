@@ -1,0 +1,50 @@
+// PARA INCLUIRLOS: {@extend .verde;}
+
+// Verde
+.verde {
+    background-color: $verde1;
+    font-family: $textos;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: auto;
+}
+
+// Botones turnos
+.button {
+    font-family: $textos;
+    font-weight: 200;
+    color: $blanca;
+    background-color: $boton;
+    size: 30px;
+    padding: 8px;
+    border-radius: 50px;
+    border-color: $blanca;
+   
+}
+
+// h1
+.titulos1 {
+    font-family: $Titulos;
+    font-size: 80px;
+    
+}
+
+// h2
+.titulos2
+    {
+        font-family: $Titulos;
+        font-size: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        max-width: 70rem;
+        margin: auto;
+    }
+
+    .textos{
+        font-family: $textos;
+        
+    }

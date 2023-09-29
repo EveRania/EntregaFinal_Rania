@@ -1,0 +1,145 @@
+#main_sobremi {
+    background-color: $fondoclaro;
+    max-width: 99%;
+
+    .introduccion {
+        margin: auto;
+        max-width: 75%;
+        padding: 3rem 0 3rem 0;
+
+        .img_sobremi {
+            width: 500px;
+            border-radius: 250px;
+            max-width: 99%;
+        }
+
+        .clearfix {
+            .titulo_sobremi {
+                @extend .titulos1;
+            }
+
+            .formacion {
+                font-family: $textos;
+                list-style-image: url(/assets/img/logo_favicon.ico);
+
+                li {
+                    padding-top: 1rem;
+                }
+            }
+
+            .botones {
+
+                margin: auto;
+
+                a {
+                    text-decoration: none
+                }
+
+                button {
+                    @extend .button;
+                    margin: 5px 5px 10px 5px;
+                }
+            }
+        }
+    }
+
+    .info_sobre_mi {
+
+        .ofrezco {
+            background-color: $fondito1;
+            padding: 2rem;
+
+            .que_te_ofrezco {
+                @extend .titulos2;
+                max-width: 30rem;
+                padding: 1.5rem;
+                text-align: center;
+
+            }
+
+            .p_ofrezco {
+                @extend .textos;
+                margin: auto;
+                max-width: 75%;
+            }
+        }
+
+        .mision {
+            background-color: $fondito2;
+            padding: 2rem;
+
+            .que_te_ofrezco {
+                @extend .titulos2;
+                max-width: 30rem;
+                padding: 1.5rem;
+                text-align: center;
+
+            }
+
+            .p_ofrezco {
+                @extend .textos;
+                margin: auto;
+                max-width: 75%;
+            }
+        }
+
+        .vision {
+            background-color: $fondito1;
+            padding: 2rem;
+            box-shadow: aliceblue;
+
+            .que_te_ofrezco {
+                @extend .titulos2;
+                max-width: 30rem;
+                padding: 1.5rem;
+                text-align: center;
+
+            }
+
+            .p_ofrezco {
+                @extend .textos;
+                margin: auto;
+                max-width: 75%;
+            }
+        }
+    }
+
+    @media(max-width: 1000px) {
+        .introduccion {
+            display: grid;
+
+            grid-template-areas:
+                "foto foto foto"
+                "h1 h1 h1"
+                "ul ul ul"
+                "button button button";
+        }
+
+        .img_sobremi {
+            grid-area: foto;
+        }
+
+        .titulo_sobremi {
+            grid-area: h1;
+            text-align: center;
+
+        }
+
+        .formacion {
+            grid-area: ul;
+            text-align: center;
+        }
+
+        .botones {
+            grid-area: button;
+            text-align: center;
+        }
+
+        .verde {
+            font-size: 15px;
+        }
+
+
+
+    }
+}

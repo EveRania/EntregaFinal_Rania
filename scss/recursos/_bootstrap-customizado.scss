@@ -1,0 +1,20 @@
+$success: $fondovioleta;
+
+$primary: $boton;
+
+.container {
+    padding: 20px 0 30px;
+
+    .card {
+        font-family: $textos;
+        font-weight: 200;
+
+        .btn {
+            color: $blanca;
+            @extend .button;
+
+        }
+    }
+}
+
+

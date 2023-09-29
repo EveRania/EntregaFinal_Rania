@@ -1,0 +1,57 @@
+.turnos {
+    font-family: $textos;
+    // display: flex;
+    // justify-content: space-evenly;
+    // padding: 20px 0 30px 0;
+    text-align: center;
+    .dias {
+        padding: 2rem 0;
+        background-color: $fondoclaro;   
+    }
+
+    .form {
+        padding: 2rem 0;
+        // background-color: #cdcdcd; 
+
+    }
+
+    .boton {
+        @extend .button;
+        display: flex;
+        margin: auto;
+
+    }
+}
+
+
+
+@media(max-width: 1000px) {
+
+    .turnos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "dias"
+            "form";
+    }
+
+    .dias {
+        grid-area: dias;
+        text-align: center;
+    }
+
+    .form {
+        grid-area: form;
+        /* display: block; */
+    }
+
+    .form label {
+        display: block;
+        text-align: center;
+    }
+
+    .form input {
+        display: flex;
+        margin: auto;
+    }
+}
