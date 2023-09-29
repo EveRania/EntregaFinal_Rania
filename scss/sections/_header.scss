@@ -6,11 +6,21 @@
 }
 
 /* Pseudoclases: hover */
+
+li{
+    a{
+        height: 30px;
+        border-radius: 15%;
+   transition: height 2s border-radius 2s;
+
+    }
+}
 li {
     a:hover {
-        background-color: rgb(140, 98, 248);
-        border-radius: 15%;
-        transform: scale(1.1);
+        background-color: $fondito2;
+        border-radius: 20%;
+        // transform: scale(1.1);
+        height: 40px;
 
     }
 }

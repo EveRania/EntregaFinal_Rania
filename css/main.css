@@ -61,10 +61,16 @@
 }
 
 /* Pseudoclases: hover */
-li a:hover {
-  background-color: rgb(140, 98, 248);
+li a {
+  height: 30px;
   border-radius: 15%;
-  transform: scale(1.1);
+  transition: height 2s border-radius 2s;
+}
+
+li a:hover {
+  background-color: #b3a0e2;
+  border-radius: 20%;
+  height: 40px;
 }
 
 #main_index .presentacion {
