@@ -1,8 +1,6 @@
 .turnos {
     font-family: $textos;
-    // display: flex;
-    // justify-content: space-evenly;
-    // padding: 20px 0 30px 0;
+    
     text-align: center;
     .dias {
         padding: 2rem 0;
@@ -11,7 +9,7 @@
 
     .form {
         padding: 2rem 0;
-        // background-color: #cdcdcd; 
+      
 
     }
 
@@ -42,7 +40,7 @@
 
     .form {
         grid-area: form;
-        /* display: block; */
+      
     }
 
     .form label {

@@ -332,7 +332,6 @@ main .kinesiologia .p_serv {
   }
   .form {
     grid-area: form;
-    /* display: block; */
   }
   .form label {
     display: block;
