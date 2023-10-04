@@ -11,7 +11,7 @@ main {
         padding: 3rem 0 3rem 0;
 
         .img_servicios {
-            max-width: 400px;
+            width: 400px;
         }
 
         .titulo_serv {
@@ -30,8 +30,31 @@ main {
         }
 
     }
+}
 
+@media(max-width: 1331px) {
+    main {
+        h1 {
+            font-size: 50px;
+        }
 
+        .kinesiologia {
+            .img_servicios {
+                width: 295px;
+            }
 
+            .titulo_serv {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            a {
+                display: flex;
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    }
 
 }

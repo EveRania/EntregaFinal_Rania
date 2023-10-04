@@ -1,5 +1,5 @@
 #main_index {
-    .presentacion {
+    .presentacion_bg {
         padding: 73px;
         background-image:
             url(../assets/img/holaa2.jpg);
@@ -7,12 +7,16 @@
         background-position: center center;
         background-size: cover;
 
+        .presentacion_txt {
+            margin: auto;
+            max-width: 70rem;
+        }
 
         .h1 {
             @extend .titulos1;
             text-align: left;
-            max-width: 70rem;
-            margin: auto;
+            // max-width: 70rem;
+            // margin: auto;
         }
 
         .h2 {
@@ -24,15 +28,15 @@
             text-align: left;
             padding-top: 10px;
             padding-bottom: 10px;
-            padding-left: 123px;
-            max-width: 30rem;
+            // padding-left: 123px;
+            max-width: 21rem;
             font-weight: 400;
         }
-        
+
         button {
             @extend .button;
-            margin: 1rem 1rem 1rem 20.5rem;
-            margin-left: 7.5rem;
+            // margin: 1rem 1rem 1rem 20.5rem;
+            // margin-left: 7.5rem;
         }
     }
 
@@ -41,75 +45,82 @@
     }
 
 
-    @media(max-width: 1000px) {
+    @media(max-width: 992px) {
+
+        .presentacion_bg {
+            background-image: none;
+            background-color: $violetclaro;
+            max-width: 100%;
+
+            .presentacion_txt {
+                display: grid;
+
+                grid-template-areas:
+                    "h1 "
+                    "h2 "
+                    "subtexto"
+                    "button";
+            }
+
+
+            .h1 {
+                grid-area: h1;
+                font-size: 50px;
+                text-align: center;
+
+            }
+
+            .h2 {
+                grid-area: h2;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .subtexto {
+                grid-area: subtexto;
+                max-width: 99%;
+                text-align: center;
+                padding: 0 0 1rem 0;
+                // margin: auto;
+            }
+
+            .button {
+                grid-area: button;
+                display: flex;
+                justify-content: center;
+                margin: auto;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
 
         .verde {
             font-size: 15px;
         }
 
-        .main_index {
-            display: grid;
+        // .presentacion_txt {
+        //     .h1 {
 
-            grid-template-areas:
-                "h1 h1 h1"
-                "h2 h2 h2"
-                "subtexto subtexto subtexto"
-                "button button button";
-        }
+        //     }
 
-        .h1 {
-            grid-area: h1;
-            
-        }
-
-        .h2 {
-            grid-area: h2;
-        }
-
-        .subtexto {
-            grid-area: subtexto;
-            max-width: 60vw;
-            margin: auto;
-        }
-
-        .button {
-            grid-area: button;
-            display: flex;
-            justify-content: center;
-        }
-
-        .presentacion {
-            background-image: none;
-            background-color: $violetclaro;
-            max-width: 100%;
-
-            .h1 {
-                font-size: 50px;
-                text-align: center;
-            }
-
-            .h2 {
-                font-size: 30px;
-                text-align: center;
-
-            }
-
-            .subtexto {
-                text-align: center;
-                padding: 0 0 1rem 0;
-            }
-
-            a {
-                text-decoration: none;
-            }
-
-            button {
-                display: flex;
-                margin: auto;
-
-            }
+        //     .h2 {
 
 
-        }
+        //     }
+
+        //     .subtexto {
+
+        //     }
+
+
+
+        //     button {
+        //         display: flex;
+
+
+        //     }
     }
+
 }

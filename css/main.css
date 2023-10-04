@@ -12,7 +12,7 @@
   margin: auto;
 }
 
-.button, .turnos .boton, main .kinesiologia button, #main_sobremi .introduccion .clearfix .botones button, #main_index .presentacion button, .container .card .btn {
+.button, .turnos .boton, main .kinesiologia button, #main_sobremi .introduccion .clearfix .botones button, #main_index .presentacion_bg button, .container .card .btn {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   color: #eaeaea;
@@ -23,12 +23,12 @@
   border-color: #eaeaea;
 }
 
-.titulos1, main h1, main .h1, #main_sobremi .introduccion .clearfix .titulo_sobremi, #main_index .presentacion .h1 {
+.titulos1, main h1, main .h1, #main_sobremi .introduccion .clearfix .titulo_sobremi, #main_index .presentacion_bg .h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 80px;
 }
 
-.titulos2, main .kinesiologia .titulo_serv, #main_sobremi .info_sobre_mi .vision .que_te_ofrezco, #main_sobremi .info_sobre_mi .mision .que_te_ofrezco, #main_sobremi .info_sobre_mi .ofrezco .que_te_ofrezco, #main_index .presentacion .h2 {
+.titulos2, main .kinesiologia .titulo_serv, #main_sobremi .info_sobre_mi .vision .que_te_ofrezco, #main_sobremi .info_sobre_mi .mision .que_te_ofrezco, #main_sobremi .info_sobre_mi .ofrezco .que_te_ofrezco, #main_index .presentacion_bg .h2 {
   font-family: "Work Sans", sans-serif;
   font-size: 40px;
   padding-top: 10px;
@@ -38,7 +38,7 @@
   margin: auto;
 }
 
-.textos, .ejercicios_videos .color_fondo p, main .kinesiologia .p_serv, #main_sobremi .info_sobre_mi .vision .p_ofrezco, #main_sobremi .info_sobre_mi .mision .p_ofrezco, #main_sobremi .info_sobre_mi .ofrezco .p_ofrezco, #main_index .presentacion .subtexto {
+.textos, .ejercicios_videos .color_fondo p, main .kinesiologia .p_serv, #main_sobremi .info_sobre_mi .vision .p_ofrezco, #main_sobremi .info_sobre_mi .mision .p_ofrezco, #main_sobremi .info_sobre_mi .ofrezco .p_ofrezco, #main_index .presentacion_bg .subtexto {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -73,76 +73,68 @@ li a:hover {
   height: 40px;
 }
 
-#main_index .presentacion {
+@media (max-width: 992px) {
+  .header_logo {
+    max-width: 99%;
+  }
+}
+#main_index .presentacion_bg {
   padding: 73px;
   background-image: url(../assets/img/holaa2.jpg);
   background-position: center center;
   background-size: cover;
 }
-#main_index .presentacion .h1 {
-  text-align: left;
-  max-width: 70rem;
+#main_index .presentacion_bg .presentacion_txt {
   margin: auto;
+  max-width: 70rem;
 }
-#main_index .presentacion .subtexto {
+#main_index .presentacion_bg .h1 {
+  text-align: left;
+}
+#main_index .presentacion_bg .subtexto {
   text-align: left;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 123px;
-  max-width: 30rem;
+  max-width: 21rem;
   font-weight: 400;
 }
-#main_index .presentacion button {
-  margin: 1rem 1rem 1rem 20.5rem;
-  margin-left: 7.5rem;
-}
-@media (max-width: 1000px) {
-  #main_index .verde, #main_index .verde {
-    font-size: 15px;
-  }
-  #main_index .main_index {
-    display: grid;
-    grid-template-areas: "h1 h1 h1" "h2 h2 h2" "subtexto subtexto subtexto" "button button button";
-  }
-  #main_index .h1 {
-    grid-area: h1;
-  }
-  #main_index .h2 {
-    grid-area: h2;
-  }
-  #main_index .subtexto {
-    grid-area: subtexto;
-    max-width: 60vw;
-    margin: auto;
-  }
-  #main_index .button, #main_index .turnos .boton, .turnos #main_index .boton, #main_index main .kinesiologia button, main .kinesiologia #main_index button, #main_index #main_sobremi .introduccion .clearfix .botones button, #main_sobremi .introduccion .clearfix .botones #main_index button, #main_index .container .card .btn, .container .card #main_index .btn, #main_index .presentacion button {
-    grid-area: button;
-    display: flex;
-    justify-content: center;
-  }
-  #main_index .presentacion {
+@media (max-width: 992px) {
+  #main_index .presentacion_bg {
     background-image: none;
     background-color: #9a7ee2;
     max-width: 100%;
   }
-  #main_index .presentacion .h1 {
+  #main_index .presentacion_bg .presentacion_txt {
+    display: grid;
+    grid-template-areas: "h1 " "h2 " "subtexto" "button";
+  }
+  #main_index .presentacion_bg .h1 {
+    grid-area: h1;
     font-size: 50px;
     text-align: center;
   }
-  #main_index .presentacion .h2 {
+  #main_index .presentacion_bg .h2 {
+    grid-area: h2;
     font-size: 30px;
     text-align: center;
   }
-  #main_index .presentacion .subtexto {
+  #main_index .presentacion_bg .subtexto {
+    grid-area: subtexto;
+    max-width: 99%;
     text-align: center;
     padding: 0 0 1rem 0;
   }
-  #main_index .presentacion a {
+  #main_index .presentacion_bg .button, #main_index .presentacion_bg .turnos .boton, .turnos #main_index .presentacion_bg .boton, #main_index .presentacion_bg main .kinesiologia button, main .kinesiologia #main_index .presentacion_bg button, #main_index .presentacion_bg #main_sobremi .introduccion .clearfix .botones button, #main_sobremi .introduccion .clearfix .botones #main_index .presentacion_bg button, #main_index .presentacion_bg .container .card .btn, .container .card #main_index .presentacion_bg .btn, #main_index .presentacion_bg button {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  #main_index .presentacion_bg .button a, #main_index .presentacion_bg .turnos .boton a, .turnos #main_index .presentacion_bg .boton a, #main_index .presentacion_bg main .kinesiologia button a, main .kinesiologia #main_index .presentacion_bg button a, #main_index .presentacion_bg #main_sobremi .introduccion .clearfix .botones button a, #main_sobremi .introduccion .clearfix .botones #main_index .presentacion_bg button a, #main_index .presentacion_bg .container .card .btn a, .container .card #main_index .presentacion_bg .btn a, #main_index .presentacion_bg button a {
     text-decoration: none;
   }
-  #main_index .presentacion button {
-    display: flex;
-    margin: auto;
+  #main_index .verde, #main_index .verde {
+    font-size: 15px;
   }
 }
 
@@ -216,28 +208,39 @@ li a:hover {
   margin: auto;
   max-width: 75%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1390px) {
   #main_sobremi .introduccion {
     display: grid;
-    grid-template-areas: "foto foto foto" "h1 h1 h1" "ul ul ul" "button button button";
+    grid-template-areas: "foto" "h1" "ul" "button";
+    justify-content: center;
   }
-  #main_sobremi .img_sobremi {
+  #main_sobremi .introduccion .img_sobremi {
     grid-area: foto;
+    margin: auto;
+    width: 99%;
   }
-  #main_sobremi .titulo_sobremi {
+  #main_sobremi .introduccion .clearfix {
+    width: 99%;
+  }
+  #main_sobremi .introduccion .clearfix .titulo_sobremi {
     grid-area: h1;
+    font-size: 40px;
     text-align: center;
+    margin: auto;
   }
-  #main_sobremi .formacion {
+  #main_sobremi .introduccion .clearfix .formacion {
     grid-area: ul;
     text-align: center;
+    margin: auto;
   }
-  #main_sobremi .botones {
+  #main_sobremi .introduccion .clearfix .botones {
     grid-area: button;
     text-align: center;
+    margin: auto;
   }
   #main_sobremi .verde, #main_sobremi #main_index .verde, #main_index #main_sobremi .verde {
     font-size: 15px;
+    margin: auto;
   }
 }
 
@@ -250,10 +253,27 @@ main .kinesiologia {
   padding: 3rem 0 3rem 0;
 }
 main .kinesiologia .img_servicios {
-  max-width: 400px;
+  width: 400px;
 }
 main .kinesiologia .p_serv {
   padding-left: 10px;
+}
+@media (max-width: 1331px) {
+  main h1, main .h1 {
+    font-size: 50px;
+  }
+  main .kinesiologia .img_servicios {
+    width: 295px;
+  }
+  main .kinesiologia .titulo_serv {
+    font-size: 24px;
+    text-align: center;
+  }
+  main .kinesiologia a {
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
 }
 .ejercicios_videos .color_fondo {
   background-color: #dcdcdc;
@@ -277,6 +297,11 @@ main .kinesiologia .p_serv {
   max-width: 97%;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 1000px) {
+  .ejercicios_videos .ejercicios_videos h1, .ejercicios_videos .ejercicios_videos .h1 {
+    font-size: 50px;
+  }
 }
 
 .turnos {

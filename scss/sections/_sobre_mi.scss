@@ -104,42 +104,55 @@
         }
     }
 
-    @media(max-width: 1000px) {
+
+    @media(max-width: 1390px) {
+
         .introduccion {
             display: grid;
 
             grid-template-areas:
-                "foto foto foto"
-                "h1 h1 h1"
-                "ul ul ul"
-                "button button button";
-        }
+                "foto"
+                "h1"
+                "ul"
+                "button";
+            justify-content: center;
 
-        .img_sobremi {
-            grid-area: foto;
-        }
 
-        .titulo_sobremi {
-            grid-area: h1;
-            text-align: center;
+            .img_sobremi {
+                grid-area: foto;
+                margin: auto;
+                width: 99%;
+            }
 
-        }
+            .clearfix {
+                width: 99%;
 
-        .formacion {
-            grid-area: ul;
-            text-align: center;
-        }
+                .titulo_sobremi {
+                    grid-area: h1;
+                    font-size: 40px;
+                    text-align: center;
+                    margin: auto;
+                }
 
-        .botones {
-            grid-area: button;
-            text-align: center;
+                .formacion {
+                    grid-area: ul;
+                    text-align: center;
+                    margin: auto;
+                }
+
+                .botones {
+                    grid-area: button;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
         }
 
         .verde {
             font-size: 15px;
+            margin: auto;
         }
-
-
-
     }
+
+
 }

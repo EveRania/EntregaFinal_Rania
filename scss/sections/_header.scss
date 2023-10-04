@@ -24,3 +24,9 @@ li {
 
     }
 }
+
+@media(max-width: 992px){
+    .header_logo{
+        max-width: 99%;
+    }
+}
