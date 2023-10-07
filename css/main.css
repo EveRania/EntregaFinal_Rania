@@ -59,6 +59,9 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+.navbar-expand-lg .navbar-collapse {
+  flex-grow: 0;
+}
 
 /* Pseudoclases: hover */
 li a {
@@ -81,6 +84,8 @@ li a:hover {
 #main_index .presentacion_bg {
   padding: 73px;
   background-image: url(../assets/img/holaa2.jpg);
+  min-height: 106vh;
+  background-color: #b3a0e2;
   background-position: center center;
   background-size: cover;
 }
@@ -12274,4 +12279,8 @@ textarea.form-control-lg {
 
 .nav-link {
   color: rgba(255, 255, 255, 0.6431372549);
+}
+
+.navbar-expand-lg .container-fluid, .navbar-expand-lg .container-sm, .navbar-expand-lg .container-md, .navbar-expand-lg .container-lg, .navbar-expand-lg .container-xl, .navbar-expand-lg .container-xxl {
+  justify-content: space-around;
 }/*# sourceMappingURL=main.css.map */

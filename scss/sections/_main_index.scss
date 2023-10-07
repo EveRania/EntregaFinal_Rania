@@ -3,6 +3,9 @@
         padding: 73px;
         background-image:
             url(../assets/img/holaa2.jpg);
+        min-height: 106vh;
+        background-color: $fondito2;
+        // background: linear-gradient(96deg, $fondovioleta 32%, $verde1 64%, $boton 100%);
 
         background-position: center center;
         background-size: cover;
@@ -10,6 +13,7 @@
         .presentacion_txt {
             margin: auto;
             max-width: 70rem;
+
         }
 
         .h1 {

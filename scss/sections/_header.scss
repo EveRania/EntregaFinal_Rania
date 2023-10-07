@@ -3,30 +3,37 @@
     background: linear-gradient(96deg, $fondovioleta 32%, $verde1 64%, $boton 100%);
     font-family: $textos;
     font-weight: 400;
+// .barra{
+//     max-width: 90rem;
+//     margin: auto;
+// }
+.navbar-collapse{
+    flex-grow: 0;
+}
 }
 
 /* Pseudoclases: hover */
 
-li{
-    a{
+li {
+    a {
         height: 30px;
         border-radius: 15%;
-   transition: height 2s border-radius 2s;
+        transition: height 2s border-radius 2s;
 
     }
 }
+
 li {
     a:hover {
         background-color: $fondito2;
         border-radius: 20%;
-        // transform: scale(1.1);
         height: 40px;
 
     }
 }
 
-@media(max-width: 992px){
-    .header_logo{
+@media(max-width: 992px) {
+    .header_logo {
         max-width: 99%;
     }
 }
