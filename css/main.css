@@ -145,7 +145,7 @@ li a:hover {
 
 #main_sobremi {
   background-color: #dcdcdc;
-  max-width: 99%;
+  max-width: 100%;
 }
 #main_sobremi .introduccion {
   margin: auto;
@@ -156,6 +156,9 @@ li a:hover {
   width: 500px;
   border-radius: 250px;
   max-width: 99%;
+}
+#main_sobremi .introduccion .clearfix .titulo_sobremi {
+  text-align: left;
 }
 #main_sobremi .introduccion .clearfix .formacion {
   font-family: "Montserrat", sans-serif;
@@ -222,7 +225,7 @@ li a:hover {
   #main_sobremi .introduccion .img_sobremi {
     grid-area: foto;
     margin: auto;
-    width: 99%;
+    width: 51%;
   }
   #main_sobremi .introduccion .clearfix {
     width: 99%;
@@ -268,7 +271,8 @@ main .kinesiologia .p_serv {
     font-size: 50px;
   }
   main .kinesiologia .img_servicios {
-    width: 295px;
+    width: 39%;
+    margin-top: 3rem;
   }
   main .kinesiologia .titulo_serv {
     font-size: 24px;

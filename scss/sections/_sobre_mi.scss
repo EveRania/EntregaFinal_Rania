@@ -1,6 +1,6 @@
 #main_sobremi {
     background-color: $fondoclaro;
-    max-width: 99%;
+    max-width: 100%;
 
     .introduccion {
         margin: auto;
@@ -16,6 +16,7 @@
         .clearfix {
             .titulo_sobremi {
                 @extend .titulos1;
+                text-align: left;
             }
 
             .formacion {
@@ -121,7 +122,7 @@
             .img_sobremi {
                 grid-area: foto;
                 margin: auto;
-                width: 99%;
+                width: 51%;
             }
 
             .clearfix {
